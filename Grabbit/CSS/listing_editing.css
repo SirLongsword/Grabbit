@@ -1,0 +1,261 @@
+/* Listing Text */
+.listing-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.listing-card p strong {
+  color: #213E60;
+}
+
+/* Form elements */
+form select,
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 1rem;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #F4F2EF;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form select {
+  border-color: #F4F2EF;
+  border-radius: 4px;
+}
+
+/* Focus states */
+form select:focus,
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+  border-color: #ADAC54;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Textarea */
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-family: 'Work Sans', Arial, sans-serif;
+  color: #272525;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  background-color: #213E60;
+  color: #F4F2EF;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ADAC54;
+  color: #213E60;
+}
+
+/* Delete button */
+.delete-btn,
+button.delete {
+  background-color: #AD3C3C;
+  color: #F4F2EF;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover,
+button.delete:hover {
+  background-color: #800000;
+}
+
+/* Manage Listings */
+.manage-listings {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Create Listing button */
+.manage-listings .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 42px;
+  background-color: #213E60; 
+  color: #F4F2EF;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.manage-listings .btn:hover {
+  background-color: #ADAC54;
+  color: #213E60;
+}
+
+.manage-listings .btn:active {
+  background-color: #8B8B3F;
+  color: #1A2E45;
+  transform: scale(0.98);
+  transition: background-color 0.1s ease;
+}
+
+/* Listings grid */
+.manage-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  justify-items: start;
+  align-items: stretch;
+}
+
+/* Each listing card */
+.listing-card {
+  background-color: #F4F2EF;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(33, 62, 96, 0.15);
+  padding: 1rem 1.2rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+  box-shadow: 0 4px 12px rgba(33, 62, 96, 0.3);
+}
+
+/* Listing title */
+.listing-card h2 {
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: #213E60;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Listing card actions */
+.listing-card .actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+/* Edit link */
+.listing-card .actions a {
+  text-decoration: none;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: #213E60;
+  background-color: #F4F2EF;
+  border: 1.5px solid #213E60;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.listing-card .actions a:hover {
+  background-color: #213E60;
+  color: #F4F2EF;
+}
+
+/* Delete button within listing cards */
+.listing-card .actions button.delete {
+  background-color: #AD3C3C;
+  color: #F4F2EF;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.listing-card .actions button.delete:hover {
+  background-color: #800000;
+}
+
+.listing-image {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;  
+  display: block;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(33, 62, 96, 0.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .manage-listings {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .listing-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .manage-listings .btn {
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 1.5rem;
+  }
+
+  .listing-image {
+    height: 160px;
+  }
+}
+

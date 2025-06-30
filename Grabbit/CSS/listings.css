@@ -1,0 +1,154 @@
+/* Categories grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: transparent;
+  color: #272525;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-item:hover,
+.category-item:focus {
+  background-color: #ADAC54;
+  color: #FAF9F7;
+}
+
+/* Listings grid */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Listing card */
+.listing-card {
+  display: block;
+  background-color: #FAF9F7;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.listing-card > button {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: inherit;
+  transition: inherit;
+}
+
+/* Listing image */
+.listing-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Info section */
+.listing-info {
+  padding: 0.75rem 1rem;
+  background-color: inherit;
+}
+
+/* Listing details */
+.listing-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.listing-location {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #272525;
+}
+
+.listing-price {
+  color: #213E60;
+  font-weight: bold;
+  margin: 6px 0 0;
+}
+
+.listing-user {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: #444;
+}
+
+.listing-card:hover,
+.listing-card:hover > button {
+  background-color: #ADAC54;
+}
+
+/* Listing detail page */
+.listing-detail-page {
+  padding: 1rem;
+}
+
+.listing-detail-card {
+  background: #FAF9F7;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.listing-detail-card p strong {
+  color: #213E60;
+}
+
+.listing-detail-card p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.listing-image-full {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  object-fit: contain;
+  background-color: #FAF9F7;
+}
+
+button:focus-visible {
+  outline: 2px solid #213E60;
+  outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}

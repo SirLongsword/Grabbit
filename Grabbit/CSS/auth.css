@@ -1,0 +1,153 @@
+/* auth.css */
+
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px); 
+  padding: 40px 20px;
+}
+
+.auth-container {
+  background: #ADAC54;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px #213E60;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.manage-listings-button{
+  background-color: #213E60;
+  color: #F4F2EF;
+  padding: 8px 8px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1.8px solid #F4F2EF;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #213E60;
+  box-shadow: 0 0 5px #213E60;
+}
+
+.auth-form button {
+  background-color: #213E60;
+  color: #F4F2EF;
+  padding: 12px 0;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #213E60;
+}
+
+.toggle-auth {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.toggle-auth button {
+  background: none;
+  border: none;
+  color: #213E60;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+  margin-left: 4px;
+}
+
+/* Status messages */
+.error-message {
+  color: #213E60;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: -12px;
+}
+
+.success-message {
+  color: #ADAC54;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Show password */
+.show-password-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.show-password-container input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Input errors */
+.input-error {
+  border-color: #213E60 !important; 
+  background-color: #F4F2EF; 
+  box-shadow: 0 0 6px #213E60;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logout-btn {
+  background-color: #213E60;
+  color: #F4F2EF;
+  padding: 10px 20px;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

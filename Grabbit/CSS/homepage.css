@@ -1,0 +1,42 @@
+/* Sections spacing */
+.section {
+  margin-bottom: 32px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #272525;
+}
+
+.homepage-page{
+  background-color: #F4F2EF;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 0.5rem; /* Reduced padding */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+  height: 60px; /* Shorter height */
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.category-item:hover {
+  background-color: #e0e0e0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
