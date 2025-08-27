@@ -114,22 +114,22 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password_hash`, `role`, `created_at`) VALUES
-(1, 'admin1', 'admin1_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'admin', '2025-06-03 11:02:44'),
-(2, 'admin2', 'admin2_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'admin', '2025-06-03 11:02:44'),
-(3, 'mod1', 'mod1_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'moderator', '2025-06-03 11:02:44'),
-(4, 'mod2', 'mod2_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'moderator', '2025-06-03 11:02:44'),
-(5, 'mod3', 'mod3_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'moderator', '2025-06-03 11:02:44'),
-(6, 'user1', 'user1_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(7, 'user2', 'user2_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(8, 'user3', 'user3_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(9, 'user4', 'user4_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(10, 'user5', 'user5_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(11, 'user6', 'user6_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(12, 'user7', 'user7_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(13, 'user8', 'user8_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(14, 'user9', 'user9_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(15, 'user10', 'user10_test@example.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 11:02:44'),
-(16, 'Willy', 'willgomwhite@gmail.com', '$2y$10$1IlVUiLewH6ADIa1/bhYxuOGW7Rv4AzVroxJk0L0MTl83nNxfI4de', 'user', '2025-06-03 12:33:55');
+(1, 'admin1', 'admin1_test@example.com', '', 'admin', '2025-06-03 11:02:44'),
+(2, 'admin2', 'admin2_test@example.com', '', 'admin', '2025-06-03 11:02:44'),
+(3, 'mod1', 'mod1_test@example.com', '', 'moderator', '2025-06-03 11:02:44'),
+(4, 'mod2', 'mod2_test@example.com', '', 'moderator', '2025-06-03 11:02:44'),
+(5, 'mod3', 'mod3_test@example.com', '', 'moderator', '2025-06-03 11:02:44'),
+(6, 'user1', 'user1_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(7, 'user2', 'user2_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(8, 'user3', 'user3_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(9, 'user4', 'user4_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(10, 'user5', 'user5_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(11, 'user6', 'user6_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(12, 'user7', 'user7_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(13, 'user8', 'user8_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(14, 'user9', 'user9_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+(15, 'user10', 'user10_test@example.com', '', 'user', '2025-06-03 11:02:44'),
+
 
 --
 -- Indexes for dumped tables
